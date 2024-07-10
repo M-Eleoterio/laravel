@@ -21,6 +21,7 @@ class TaskFactory extends Factory
         return [
             'title' => fake()->name(),
             'description' => Str::random(10),
+            # seleciona um id aleatorio entre os disponiveis
             'user_id' => User::all()->random()->id,
         ];
     }

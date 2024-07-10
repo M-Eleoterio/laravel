@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# rota de teste
+Route::get('/test', [TaskController::class, 'test']);

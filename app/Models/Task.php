@@ -15,6 +15,7 @@ class Task extends Model
     ];
 
     public function user() {
+        # uma task pertence a um usuario
         return belongsTo(User::class);
     }
 }
